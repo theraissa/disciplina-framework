@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Projeto Django{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% block custom_css %}{% endblock %}
+  </head>
+  <body style="background-color:#FFF2EB;">
+
+    {% block nav %}{% endblock %}
+    
+    <main class="container mt-5">
+        {% block conteudo %}{% endblock %}
+        {% block carousel %}{% endblock %}
+        {% block card %}{% endblock %}
+    </main>
+    <footer>
+      {% block footer %}{% endblock %}
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    {% block custom_js %}{% endblock %}
+  </body>
+</html>
