@@ -1,4 +1,4 @@
-class Carro():
+class Carro:
     """Documentação para a classe Carro"""
     
     def __init__(self, brand, model, year, plate, identification, color, side_color, speed, consumption, kind_fuel):
